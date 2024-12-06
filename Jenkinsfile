@@ -47,7 +47,7 @@ pipeline {
 		stage('Deploy') {
 			steps {
 				sshagent(['my-ssh-key']) {
-					 sh 'scp  deploy-and-expose-dockerhub.yml ubuntu@ec2-54-144-65-211.compute-1.amazonaws.com:/home/ubuntu'
+					 sh 'scp home/ubuntu/deploy-and-expose-dockerhub.yml ubuntu@ec2-54-144-65-211.compute-1.amazonaws.com:/home/ubuntu'
 				}
 			}
 		}
