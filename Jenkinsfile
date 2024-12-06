@@ -53,7 +53,7 @@ pipeline {
                 				    ansible-playbook /home/ubuntu/deploy-and-expose-dockerhub.yml --extra-vars \\"dockerhub_image=patrickdunne24/cw2-server:1.0\\"
                 				" 
 					'''
-				//scp deploy-and-expose-dockerhub.yml ubuntu@ec2-54-144-65-211.compute-1.amazonaws.com:/home/ubuntu'
+				 //scp deploy-and-expose-dockerhub.yml ubuntu@ec2-54-144-65-211.compute-1.amazonaws.com:/home/ubuntu'
 				}
 			}
 		}
