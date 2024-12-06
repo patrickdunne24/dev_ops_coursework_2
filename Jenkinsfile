@@ -46,7 +46,7 @@ pipeline {
 		
 		stage('Deploy') {
 			steps {
-				sshagent(['my-ssh-key']) {
+				sshagent(['my-ssh-key-1']) {
 					 sh '''
 							
 					     ssh ubuntu@ec2-54-144-65-211.compute-1.amazonaws.com "
