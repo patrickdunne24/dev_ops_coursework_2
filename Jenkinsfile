@@ -49,7 +49,7 @@ pipeline {
 				sshagent(['my-ssh-key']) {
 					 sh '''
 							
-					     ssh ubuntu@ec2-54-144-65-211.compute-1.amazonaws.com "
+					     ssh ubuntu@ec2-54-197-168-198.compute-1.amazonaws.com "
                 				    ansible-playbook /home/ubuntu/deploy-and-expose-dockerhub.yml --extra-vars \\"dockerhub_image=patrickdunne24/cw2-server:1.0\\"
                 				" 
 					'''
