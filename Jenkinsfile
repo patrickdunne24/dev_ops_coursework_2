@@ -11,7 +11,7 @@ pipeline {
 		stage('Docker Image Build') {
 			steps {
 				echo 'Building Docker Image...'
-				sh 'docker build --no-cache --tag patrickdunne24/cw2-server:1.0 .'
+				sh 'docker build --tag patrickdunne24/cw2-server:1.0 .'
 				echo 'Docker Image built succesfully!'
 			}	
 		}
